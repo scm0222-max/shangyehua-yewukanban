@@ -6,8 +6,7 @@
 
 ## 在线预览
 
-- [擎天-商业化业务看板](https://scm0222-max.github.io/shangyehua-yewukanban/商业化业务看板.html
-)
+- [擎天-商业化业务看板](https://scm0222-max.github.io/shangyehua-yewukanban/)
 - [商业化业务看板字段说明](https://my.feishu.cn/docx/CUBYdqOreoqRphxuouCcDe5hnDf)
 
 
