@@ -8,7 +8,7 @@
 
 ## 通用组件
 
-`qt-panel` `qt-tabs` `qt-tab` `qt-tab--active` `qt-filters` `qt-field` `qt-field__label` `qt-field__control` `qt-select` `qt-select__value` `qt-icon` `qt-button` `qt-button--primary` `qt-button--secondary` `qt-button--text` `qt-button--icon` `qt-link` `qt-divider` `qt-status` `qt-status--active` `qt-status--pending` `qt-status--archived`
+`qt-panel` `qt-tabs` `qt-tab` `qt-tab--active` `qt-filters` `qt-field` `qt-field__label` `qt-field__control` `qt-select` `qt-select__value` `qt-select__value--placeholder` `qt-select__menu` `qt-check` `qt-icon` `qt-button` `qt-button--primary` `qt-button--secondary` `qt-button--text` `qt-button--icon` `qt-link` `qt-divider` `qt-status` `qt-status--active` `qt-status--pending` `qt-status--expired` `qt-status--archived`
 
 ## 数据表格与版本信息
 
@@ -20,7 +20,7 @@
 
 ## 表单与浮层
 
-`qt-drawer` `qt-drawer--open` `qt-drawer__backdrop` `qt-drawer__panel` `qt-drawer__header` `qt-drawer__title` `qt-drawer__body` `qt-drawer__footer` `qt-modal` `qt-modal--open` `qt-modal__backdrop` `qt-modal__panel` `qt-modal__header` `qt-modal__title` `qt-modal__body` `qt-modal__footer` `qt-form` `qt-form__row` `qt-form__label` `qt-form__control` `qt-form__help` `qt-input` `qt-preview` `qt-preview__header` `qt-preview__row` `qt-preview__cell` `qt-preview__note` `qt-metric-grid` `qt-metric` `qt-metric__label` `qt-metric__value` `qt-metric__unit` `qt-metric__scope` `qt-metric__source` `qt-metric__updated`
+`qt-drawer` `qt-drawer--open` `qt-drawer__backdrop` `qt-drawer__panel` `qt-drawer__header` `qt-drawer__title` `qt-drawer__body` `qt-drawer__footer` `qt-modal` `qt-modal--open` `qt-modal__backdrop` `qt-modal__panel` `qt-modal__header` `qt-modal__title` `qt-modal__body` `qt-modal__footer` `qt-form` `qt-form__row` `qt-form__label` `qt-form__control` `qt-form__help` `qt-input` `qt-input--textarea` `qt-policy-note-images` `qt-policy-note-previews` `qt-image-preview` `qt-preview` `qt-preview__header` `qt-preview__row` `qt-preview__cell` `qt-preview__note` `qt-metric-grid` `qt-metric` `qt-metric__label` `qt-metric__value` `qt-metric__unit` `qt-metric__scope` `qt-metric__source` `qt-metric__updated`
 
 ## 交互状态
 

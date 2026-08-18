@@ -113,15 +113,15 @@
       [data-repayment-table] th:nth-child(1),[data-repayment-table] td:nth-child(1){width:100px;}
       [data-repayment-table] th:nth-child(2),[data-repayment-table] td:nth-child(2){width:140px;}
       [data-repayment-table] th:nth-child(3),[data-repayment-table] td:nth-child(3){width:170px;}
-      [data-repayment-table] th:nth-child(4),[data-repayment-table] td:nth-child(4){width:120px;}
-      [data-repayment-table] th:nth-child(5),[data-repayment-table] td:nth-child(5){width:180px;}
-      [data-repayment-table] th:nth-child(6),[data-repayment-table] td:nth-child(6){width:170px;}
-      [data-repayment-table] th:nth-child(7),[data-repayment-table] td:nth-child(7){width:210px;}
-      [data-repayment-table] th:nth-child(8),[data-repayment-table] td:nth-child(8){width:130px;}
-      [data-repayment-table] th:nth-child(9),[data-repayment-table] td:nth-child(9){width:180px;}
-      [data-repayment-table] th:nth-child(10),[data-repayment-table] td:nth-child(10){width:210px;}
-      [data-repayment-table] th:nth-child(11),[data-repayment-table] td:nth-child(11){width:130px;}
-      [data-repayment-table] th:nth-child(12),[data-repayment-table] td:nth-child(12){width:140px; text-align:right;}
+      [data-repayment-table] th:nth-child(4),[data-repayment-table] td:nth-child(4){width:140px; text-align:right;}
+      [data-repayment-table] th:nth-child(5),[data-repayment-table] td:nth-child(5){width:210px;}
+      [data-repayment-table] th:nth-child(6),[data-repayment-table] td:nth-child(6){width:210px;}
+      [data-repayment-table] th:nth-child(7),[data-repayment-table] td:nth-child(7){width:120px;}
+      [data-repayment-table] th:nth-child(8),[data-repayment-table] td:nth-child(8){width:180px;}
+      [data-repayment-table] th:nth-child(9),[data-repayment-table] td:nth-child(9){width:170px;}
+      [data-repayment-table] th:nth-child(10),[data-repayment-table] td:nth-child(10){width:130px;}
+      [data-repayment-table] th:nth-child(11),[data-repayment-table] td:nth-child(11){width:180px;}
+      [data-repayment-table] th:nth-child(12),[data-repayment-table] td:nth-child(12){width:130px;}
       [data-repayment-table] th:nth-child(13),[data-repayment-table] td:nth-child(13){width:190px;}
       [data-repayment-table] th:nth-child(14),[data-repayment-table] td:nth-child(14){width:150px;}
       [data-cell-editor] { position:fixed; z-index:31; width:300px; margin:0; padding:14px; border-color:#d8dee8; background:#fff; box-shadow:0 8px 24px rgba(22,29,39,.18); }
@@ -256,6 +256,7 @@
                 <label class="qt-field"><span class="qt-field__label">商务标签:</span><span class="qt-field__control"><div class="qt-select" data-filter-select data-value="" data-repayment-tag><button class="qt-select__value qt-select__value--placeholder" type="button" data-filter-trigger aria-expanded="false">请选择</button><ul class="qt-select__menu" data-filter-menu hidden><li data-filter-option data-value="">请选择</li><li data-filter-option data-value="美巴文化">美巴文化</li><li data-filter-option data-value="拓路者">拓路者</li></ul></div></span></label>
                 <label class="qt-field"><span class="qt-field__label">时间选择:</span><span class="qt-field__control"><input class="qt-input" type="date" data-repayment-date aria-label="时间选择" /></span></label>
                 <label class="qt-field"><span class="qt-field__label">付款人:</span><span class="qt-field__control"><input class="qt-input" placeholder="请输入" data-repayment-payer /></span></label>
+                <label class="qt-field"><span class="qt-field__label">收款人:</span><span class="qt-field__control"><input class="qt-input" placeholder="请输入收款人名称" data-repayment-payee /></span></label>
                 <span class="qt-field"><span class="qt-field__label"></span><span class="qt-field__control"><button class="qt-button qt-button--primary" type="button" data-action="search-repayment">搜索</button></span></span>
               </div>
               <section class="qt-policy-detail" data-repayment-module>
@@ -401,15 +402,15 @@
           { key:'channel', label:'渠道' },
           { key:'businessTag', label:'商务标签' },
           { key:'transactionTime', label:'交易时间' },
+          { key:'amount', label:'交易金额' },
+          { key:'payer', label:'付款人' },
+          { key:'payee', label:'收款人' },
           { key:'businessType', label:'业务类型' },
           { key:'transactionId', label:'交易流水号' },
           { key:'payerAccount', label:'付款账号' },
-          { key:'payer', label:'付款人' },
           { key:'payerBank', label:'付款开户行' },
           { key:'payeeAccount', label:'收款账号' },
-          { key:'payee', label:'收款人' },
           { key:'payeeBank', label:'收款开户行' },
-          { key:'amount', label:'交易金额' },
           { key:'summary', label:'交易摘要' },
           { key:'remark', label:'备注' },
           { key:'actions', label:'操作' }
@@ -463,7 +464,7 @@
         function createRepaymentHeader(table) { var head = table.querySelector('thead'); head.textContent = ''; var row = document.createElement('tr'); row.className = 'qt-table__header'; repaymentColumns.forEach(function (column) { var cell = document.createElement('th'); cell.className = 'qt-table__cell'; cell.textContent = column.label; row.appendChild(cell); }); head.appendChild(row); }
         function renderRepaymentSkeleton() { createRepaymentHeader(repaymentLoadingTable); var body = repaymentLoadingTable.querySelector('tbody'); body.textContent = ''; for (var rowIndex = 0; rowIndex < 8; rowIndex += 1) { var row = document.createElement('tr'); row.className = 'qt-table__row'; repaymentColumns.forEach(function () { var cell = document.createElement('td'); cell.className = 'qt-table__cell'; var line = document.createElement('span'); line.className = 'qt-skeleton qt-skeleton__line'; cell.appendChild(line); row.appendChild(cell); }); body.appendChild(row); } }
         function setRepaymentState(state) { document.querySelectorAll('[data-repayment-state]').forEach(function (panel) { panel.hidden = panel.getAttribute('data-repayment-state') !== state; }); }
-        function repaymentMatches(row) { var channel = filterValue('[data-repayment-channel]'); var businessTag = filterValue('[data-repayment-tag]'); var date = document.querySelector('[data-repayment-date]').value; var payer = document.querySelector('[data-repayment-payer]').value.trim().toLowerCase(); return !((channel && row.channel !== channel) || (businessTag && row.businessTag !== businessTag) || (date && row.transactionTime.slice(0, 10) !== date) || (payer && row.payer.toLowerCase().indexOf(payer) === -1)); }
+        function repaymentMatches(row) { var channel = filterValue('[data-repayment-channel]'); var businessTag = filterValue('[data-repayment-tag]'); var date = document.querySelector('[data-repayment-date]').value; var payer = document.querySelector('[data-repayment-payer]').value.trim().toLowerCase(); var payee = document.querySelector('[data-repayment-payee]').value.trim().toLowerCase(); return !((channel && row.channel !== channel) || (businessTag && row.businessTag !== businessTag) || (date && row.transactionTime.slice(0, 10) !== date) || (payer && row.payer.toLowerCase().indexOf(payer) === -1) || (payee && row.payee.toLowerCase().indexOf(payee) === -1)); }
         function createRepaymentRow(item, rowIndex) { var row = document.createElement('tr'); row.className = 'qt-table__row'; repaymentColumns.forEach(function (column) { if (column.key === 'actions') return; var displayValue = item[column.key] || '—'; var cell = appendCell(row, displayValue); if (displayValue === '—') cell.classList.add('qt-table__cell--muted'); }); var actions = document.createElement('td'); actions.className = 'qt-table__cell qt-table__cell--actions'; var noteButton = document.createElement('button'); noteButton.type = 'button'; noteButton.className = 'qt-button qt-button--text'; noteButton.setAttribute('data-action', 'edit-repayment-note'); noteButton.setAttribute('data-repayment-index', rowIndex); noteButton.textContent = '备注'; actions.appendChild(noteButton); row.appendChild(actions); return row; }
         function renderRepaymentData() { createRepaymentHeader(repaymentDataTable); var body = repaymentDataTable.querySelector('tbody'); body.textContent = ''; var visibleRows = repaymentRows.filter(repaymentMatches); visibleRows.forEach(function (item) { body.appendChild(createRepaymentRow(item, repaymentRows.indexOf(item))); }); document.querySelector('[data-repayment-count]').textContent = '共 ' + visibleRows.length + ' 条'; setRepaymentState(visibleRows.length ? 'data' : 'empty'); }
         function showPage(name) { document.querySelectorAll('[data-page]').forEach(function (page) { page.hidden = page.getAttribute('data-page') !== name; }); document.querySelectorAll('[data-page-target]').forEach(function (item) { item.classList.toggle('qt-sidebar__item--selected', item.getAttribute('data-page-target') === name); }); if (name === 'channel') { setChannelState('loading'); window.setTimeout(function () { setChannelState('data'); }, 420); } if (name === 'commercial-dashboard') { setDashboardState('loading'); window.setTimeout(renderDashboardData, 420); } if (name === 'rebate-change-dashboard') { setRebateState('loading'); window.setTimeout(renderRebateData, 420); } if (name === 'repayment-dashboard') { setRepaymentState('loading'); window.setTimeout(renderRepaymentData, 420); } }
