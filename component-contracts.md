@@ -12,7 +12,7 @@
 
 ## 数据表格与版本信息
 
-`qt-table-wrap` `qt-table` `qt-table__header` `qt-table__row` `qt-table__cell` `qt-table__cell--actions` `qt-table__cell--muted` `qt-table__cell--nowrap` `qt-policy-detail` `qt-policy-detail__header` `qt-policy-detail__title` `qt-policy-detail__actions` `qt-policy-summary` `qt-policy-summary__item` `qt-version` `qt-version__title` `qt-version__meta` `qt-version__badge` `qt-timeline` `qt-timeline__item` `qt-timeline__rail` `qt-timeline__node` `qt-timeline__content` `qt-timeline__title` `qt-timeline__meta` `qt-timeline__event` `qt-timeline__delta` `qt-timeline__segment` `qt-pagination` `qt-pagination__item` `qt-pagination__item--current`
+`qt-table-wrap` `qt-table` `qt-table__header` `qt-table__row` `qt-table__row--highlight` `qt-table__cell` `qt-table__cell--actions` `qt-table__cell--muted` `qt-table__cell--nowrap` `qt-policy-detail` `qt-policy-detail__header` `qt-policy-detail__title` `qt-policy-detail__actions` `qt-policy-summary` `qt-policy-summary__item` `qt-version` `qt-version__title` `qt-version__meta` `qt-version__badge` `qt-timeline` `qt-timeline__item` `qt-timeline__rail` `qt-timeline__node` `qt-timeline__content` `qt-timeline__title` `qt-timeline__meta` `qt-timeline__event` `qt-timeline__delta` `qt-timeline__segment` `qt-pagination` `qt-pagination__item` `qt-pagination__item--current`
 
 ## 列表状态
 
