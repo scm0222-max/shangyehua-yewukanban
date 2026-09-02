@@ -77,7 +77,8 @@
       [data-filter-select] { position:relative; width:100%; min-width:0; height:32px; padding:0 34px 0 10px; cursor:pointer; } [data-filter-select] .qt-select__value { display:flex; width:100%; height:100%; align-items:center; padding:0; border:0; background:transparent; color:#4d5560; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; text-align:left; cursor:pointer; } [data-filter-select] .qt-select__value--placeholder { color:#8b94a0; } [data-filter-select] .qt-select__menu { position:absolute; top:34px; left:-1px; z-index:20; min-width:100%; max-height:220px; overflow-y:auto; margin:0; padding:4px 0; border:1px solid #d8dee8; border-radius:4px; background:#fff; box-shadow:0 8px 24px rgba(22,29,39,.14); list-style:none; } [data-filter-select] .qt-select__menu[hidden] { display:none; } [data-filter-select] .qt-select__menu li { padding:7px 10px; color:#4d5560; cursor:pointer; white-space:nowrap; } [data-filter-select] .qt-select__menu li:hover { background:#f2f7ff; color:var(--qt-blue); } [data-filter-select] .qt-select__menu li[data-selected] { color:var(--qt-blue); font-weight:600; } [data-dashboard-filter] .qt-field__control > [data-filter-select], [data-repayment-filter] .qt-field__control > [data-filter-select], [data-channel-filter] .qt-field__control > [data-filter-select] { flex:1 1 auto; min-width:0; }
       [data-date-range-popup] { position:fixed; z-index:30; width:300px; } [data-date-range-popup] .qt-form__help { min-height:20px; padding:6px 0 0; color:var(--qt-red); }
       [data-policy-summary] .qt-table { min-width:1585px; }[data-policy-summary] .qt-table__row { height:auto; }[data-policy-summary] .qt-table th:nth-child(1){width:100px;}[data-policy-summary] .qt-table th:nth-child(2){width:120px;}[data-policy-summary] .qt-table th:nth-child(3){width:110px;}[data-policy-summary] .qt-table th:nth-child(4){width:90px;}[data-policy-summary] .qt-table th:nth-child(5){width:150px;}[data-policy-summary] .qt-table th:nth-child(6){width:100px;}[data-policy-summary] .qt-table th:nth-child(7){width:260px;}[data-policy-summary] .qt-table th:nth-child(8){width:200px;}[data-policy-summary] .qt-table th:nth-child(9){width:90px;}[data-policy-summary] .qt-table th:nth-child(10){width:105px;}[data-policy-summary] .qt-table th:nth-child(11){width:260px;}[data-policy-summary] .qt-table__cell--actions { display:table-cell; vertical-align:middle; }[data-policy-summary] .qt-table__cell--actions .qt-button { display:block; margin:6px 0; }[data-policy-summary] .qt-table__cell--actions .qt-button + .qt-button { margin-left:0; }
-      [data-policy-summary] .qt-table th:nth-child(5),[data-policy-summary] [data-policy-period] { padding-left:12px; border-left:1px solid var(--qt-line); text-align:left; }
+      [data-policy-summary] [data-policy-period] { padding-left:12px; text-align:left; }
+      [data-policy-summary] .qt-table th:nth-child(3),[data-policy-summary] [data-policy-consume] { padding-left:12px; border-left:1px solid var(--qt-line); }
       [data-policy-summary] .qt-table th:last-child,[data-policy-summary] .qt-table td:last-child,[data-dashboard-table] th:last-child,[data-dashboard-table] td:last-child,[data-rb-table] th:last-child,[data-rb-table] td:last-child,[data-repayment-table] th:last-child,[data-repayment-table] td:last-child,[data-channel-table] th:last-child,[data-channel-table] td:last-child,[data-channel-state="loading"] .qt-table th:last-child,[data-channel-state="loading"] .qt-table td:last-child,[data-account-table] th:last-child,[data-account-table] td:last-child { position:sticky; right:0; background:#fff; box-shadow:-4px 0 6px -4px rgba(22,29,39,.12); z-index:1; padding-right:24px; }[data-policy-summary] .qt-table thead th:last-child,[data-dashboard-table] thead th:last-child,[data-rb-table] thead th:last-child,[data-repayment-table] thead th:last-child,[data-channel-table] thead th:last-child,[data-channel-state="loading"] .qt-table thead th:last-child,[data-account-table] thead th:last-child { background:var(--qt-head); z-index:2; }
       .qt-modal .qt-table th:last-child,.qt-modal .qt-table td:last-child { position:sticky; right:0; background:#fff; box-shadow:-4px 0 6px -4px rgba(22,29,39,.12); z-index:1; padding-right:24px; }.qt-modal .qt-table thead th:last-child { background:var(--qt-head); z-index:2; }
       [data-recharge-table] .qt-table th:nth-child(1),[data-recharge-table] .qt-table td:nth-child(1){width:110px;}[data-recharge-table] .qt-table th:nth-child(2),[data-recharge-table] .qt-table td:nth-child(2){width:152px;}[data-recharge-table] .qt-table th:nth-child(3),[data-recharge-table] .qt-table td:nth-child(3){width:118px;}[data-recharge-table] .qt-table th:nth-child(4),[data-recharge-table] .qt-table td:nth-child(4){width:160px;}[data-recharge-table] .qt-table th:nth-child(5),[data-recharge-table] .qt-table td:nth-child(5){width:116px;}[data-recharge-table] .qt-table th:nth-child(6),[data-recharge-table] .qt-table td:nth-child(6){width:150px;}[data-recharge-table] .qt-table th:nth-child(7),[data-recharge-table] .qt-table td:nth-child(7){width:125px;}[data-recharge-table] .qt-table th:nth-child(8),[data-recharge-table] .qt-table td:nth-child(8){width:112px;}[data-recharge-table] .qt-table th:nth-child(9),[data-recharge-table] .qt-table td:nth-child(9){width:118px;}[data-recharge-table] .qt-table th:nth-child(10),[data-recharge-table] .qt-table td:nth-child(10){width:105px;}
@@ -615,16 +616,15 @@
         var policyCards = [];
         function dimLabel(dim) { return { onlineCollect:'线上收量', onlineNonCollect:'线上非收量', onlineSelfOperated:'线上自运营', onlineWhiteLabelSelfOperated:'线上白牌自运营', offlineCollect:'线下收量', offlineNonCollect:'线下非收量', offlineSelfOperated:'线下自运营', offlineWhiteLabelSelfOperated:'线下白牌自运营' }[dim]; }
         var policyListRows = [
-          { id:'policy-1', source:'自拓', tag:'爱仕达', consume:'千川竞价', platform:'抖音', start:'2026-08-01', end:'2026-12-31', way:'online', rates:{ onlineCollect:0, onlineNonCollect:3 }, note:'' },
-          { id:'policy-2', source:'自拓', tag:'爱仕达', consume:'千川竞价', platform:'抖音', start:'2026-08-01', end:'2026-12-31', way:'offline', rates:{ offlineCollect:0, offlineNonCollect:2 }, note:'' },
+          { id:'policy-6', source:'自拓', tag:'爱仕达', consume:'千川品牌', platform:'抖音', start:'2026-08-01', end:'2026-12-31', way:'online', rates:{ onlineCollect:0, onlineNonCollect:3 }, note:'' },
+          { id:'policy-7', source:'自拓', tag:'爱仕达', consume:'千川品牌', platform:'抖音', start:'2026-08-01', end:'2026-12-31', way:'offline', rates:{ offlineCollect:0, offlineNonCollect:2 }, note:'' },
           { id:'policy-3', source:'自拓', tag:'泡泡道', consume:'千川竞价', platform:'抖音', start:'2026-08-01', end:'2026-12-31', way:'online', rates:{ onlineCollect:0, onlineNonCollect:2 }, note:'' },
           { id:'policy-4', source:'自拓', tag:'泡泡道', consume:'千川竞价', platform:'抖音', start:'2026-08-01', end:'2026-12-31', way:'offline', rates:{ offlineCollect:0, offlineNonCollect:2.5 }, note:'' },
           { id:'policy-5', source:'自拓', tag:'飞利浦', consume:'千川竞价', platform:'抖音', start:'2026-08-01', end:'2026-12-31', way:'online', rates:{ onlineCollect:0, onlineNonCollect:2 }, note:'' }
         ];
         var adjustments = [
           { id:'adjustment-1', policyRowId:'policy-3', adjustedAt:'2026-08-03', start:'2026-08-01', end:'2026-12-31', before:{ onlineNonCollect:3 }, rate:{ onlineNonCollect:2 }, note:'', type:'临时调整' },
-          { id:'adjustment-2', policyRowId:'policy-4', adjustedAt:'2026-08-06', start:'2026-08-01', end:'2026-12-31', before:{ offlineNonCollect:2 }, rate:{ offlineNonCollect:2.5 }, note:'', type:'覆盖调整' },
-          { id:'adjustment-3', policyRowId:'policy-2', adjustedAt:'2026-08-08', start:'2026-08-01', end:'2026-12-31', before:{ offlineNonCollect:3 }, rate:{ offlineNonCollect:2 }, note:'新增线下返点调整', type:'覆盖调整' }
+          { id:'adjustment-2', policyRowId:'policy-4', adjustedAt:'2026-08-06', start:'2026-08-01', end:'2026-12-31', before:{ offlineNonCollect:2 }, rate:{ offlineNonCollect:2.5 }, note:'', type:'覆盖调整' }
         ];
         var deletedPolicySegments = {};
 
@@ -766,6 +766,33 @@
         function deltaText(before, after) { var delta = after - before; return (delta > 0 ? '+' : '') + delta + '%'; }
         function appendCell(row, text) { var cell = document.createElement('td'); cell.className = 'qt-table__cell'; cell.textContent = text; row.appendChild(cell); return cell; }
         function rateCellHtml(rates, selectedWay) { var modes = [{ suffix:'Collect', label:'收量' }, { suffix:'NonCollect', label:'非收量' }, { suffix:'SelfOperated', label:'自运营' }, { suffix:'WhiteLabelSelfOperated', label:'白牌自运营' }]; var lines = []; modes.forEach(function (mode) { if (rates[selectedWay + mode.suffix] != null) lines.push(mode.label + ': ' + rates[selectedWay + mode.suffix] + '%'); }); return lines.length ? lines.join('<br />') : '<span class="qt-table__cell--muted">—</span>'; }
+        function sortedPolicyListRows() {
+          var scopeOrder = {};
+          var consumeOrder = {};
+          var originalOrder = {};
+          var nextScopeOrder = 0;
+          var nextConsumeOrder = 0;
+          policyListRows.forEach(function (policyRow, policyRowIndex) {
+            var scopeKey = [policyRow.source, policyRow.tag].join('|');
+            var consumeKey = [scopeKey, policyRow.consume, policyRow.platform].join('|');
+            if (scopeOrder[scopeKey] === undefined) scopeOrder[scopeKey] = nextScopeOrder++;
+            if (consumeOrder[consumeKey] === undefined) consumeOrder[consumeKey] = nextConsumeOrder++;
+            originalOrder[policyRow.id] = policyRowIndex;
+          });
+          return policyListRows.slice().sort(function (left, right) {
+            var leftScopeKey = [left.source, left.tag].join('|');
+            var rightScopeKey = [right.source, right.tag].join('|');
+            if (scopeOrder[leftScopeKey] !== scopeOrder[rightScopeKey]) return scopeOrder[leftScopeKey] - scopeOrder[rightScopeKey];
+            var leftConsumeKey = [leftScopeKey, left.consume, left.platform].join('|');
+            var rightConsumeKey = [rightScopeKey, right.consume, right.platform].join('|');
+            if (consumeOrder[leftConsumeKey] !== consumeOrder[rightConsumeKey]) return consumeOrder[leftConsumeKey] - consumeOrder[rightConsumeKey];
+            var wayOrder = { online:0, offline:1 };
+            if (wayOrder[left.way] !== wayOrder[right.way]) return wayOrder[left.way] - wayOrder[right.way];
+            if (left.start !== right.start) return right.start.localeCompare(left.start);
+            if (left.end !== right.end) return right.end.localeCompare(left.end);
+            return originalOrder[left.id] - originalOrder[right.id];
+          });
+        }
         function deleteAdjustment(id) { var index = adjustments.findIndex(function (item) { return item.id === id; }); if (index < 0) return; adjustments.splice(index, 1); closeModals(); renderPolicy(); }
         function policySegmentKey(start, end) { return start + '|' + end; }
         function deletePolicySegment(source, start, end) { if (source === 'base') { deletedPolicySegments[policySegmentKey(start, end)] = true; closeModals(); renderPolicy(); return; } deleteAdjustment(source); }
@@ -789,23 +816,26 @@
           if (outerBody) {
             outerBody.textContent = '';
             var today = asValue(new Date());
-            policyListRows.forEach(function (policyRow, policyRowIndex) {
+            var displayPolicyRows = sortedPolicyListRows();
+            displayPolicyRows.forEach(function (policyRow, policyRowIndex) {
                 var row = document.createElement('tr'); row.className = 'qt-table__row'; row.setAttribute('data-policy-row-id', policyRow.id); row.setAttribute('data-rate-start', policyRow.start); row.setAttribute('data-rate-end', policyRow.end); row.setAttribute('data-rate-way', policyRow.way);
-                var policyScopeKey = [policyRow.source, policyRow.tag, policyRow.consume, policyRow.platform].join('|');
-                var previousPolicyRow = policyRowIndex > 0 ? policyListRows[policyRowIndex - 1] : null;
-                var previousPolicyScopeKey = previousPolicyRow ? [previousPolicyRow.source, previousPolicyRow.tag, previousPolicyRow.consume, previousPolicyRow.platform].join('|') : '';
+                var policyScopeKey = [policyRow.source, policyRow.tag].join('|');
+                var previousPolicyRow = policyRowIndex > 0 ? displayPolicyRows[policyRowIndex - 1] : null;
+                var previousPolicyScopeKey = previousPolicyRow ? [previousPolicyRow.source, previousPolicyRow.tag].join('|') : '';
                 if (policyScopeKey !== previousPolicyScopeKey) {
                   var policyScopeRowSpan = 1;
-                  for (var nextPolicyRowIndex = policyRowIndex + 1; nextPolicyRowIndex < policyListRows.length; nextPolicyRowIndex += 1) {
-                    var nextPolicyRow = policyListRows[nextPolicyRowIndex];
-                    var nextPolicyScopeKey = [nextPolicyRow.source, nextPolicyRow.tag, nextPolicyRow.consume, nextPolicyRow.platform].join('|');
+                  for (var nextPolicyRowIndex = policyRowIndex + 1; nextPolicyRowIndex < displayPolicyRows.length; nextPolicyRowIndex += 1) {
+                    var nextPolicyRow = displayPolicyRows[nextPolicyRowIndex];
+                    var nextPolicyScopeKey = [nextPolicyRow.source, nextPolicyRow.tag].join('|');
                     if (nextPolicyScopeKey !== policyScopeKey) break;
                     policyScopeRowSpan += 1;
                   }
-                  [policyRow.source, policyRow.tag, policyRow.consume, policyRow.platform].forEach(function (policyScopeValue) {
+                  [policyRow.source, policyRow.tag].forEach(function (policyScopeValue) {
                     appendCell(row, policyScopeValue).rowSpan = policyScopeRowSpan;
                   });
                 }
+                appendCell(row, policyRow.consume).setAttribute('data-policy-consume', '');
+                appendCell(row, policyRow.platform);
                 appendCell(row, period(policyRow.start, policyRow.end)).setAttribute('data-policy-period', '');
                 appendCell(row, policyWayLabel(policyRow.way));
                 var rebateRate = document.createElement('td'); rebateRate.className = 'qt-table__cell'; rebateRate.innerHTML = rateCellHtml(policyRow.rates, policyRow.way); row.appendChild(rebateRate);
@@ -907,6 +937,31 @@
         }
         function openCreateDrawer(boundStart, boundEnd, way, rowId) { var targetPolicyRow = policyListRows.find(function (item) { return item.id === rowId; }); var targetStart = targetPolicyRow ? targetPolicyRow.start : boundStart; var targetEnd = targetPolicyRow ? targetPolicyRow.end : boundEnd; resetDrawer(targetStart, targetEnd, targetPolicyRow ? targetPolicyRow.way : way, rowId); adjustmentBoundStart = targetStart || baseStart; adjustmentBoundEnd = targetEnd || baseEnd; var startInput = drawer.querySelector('[data-adjustment-start]'); var endInput = drawer.querySelector('[data-adjustment-end]'); startInput.min = adjustmentBoundStart; startInput.max = adjustmentBoundEnd; endInput.min = adjustmentBoundStart; endInput.max = adjustmentBoundEnd; startInput.value = adjustmentBoundStart; endInput.value = adjustmentBoundEnd; drawer.classList.add('qt-drawer--open'); drawer.setAttribute('aria-hidden', 'false'); }
         function openEditDrawer(id) { var adjustment = adjustments.find(function (item) { return item.id === id; }); if (!adjustment) return; editingId = id; adjustmentTargetRowId = adjustment.policyRowId || null; var targetPolicyRow = policyListRows.find(function (item) { return item.id === adjustmentTargetRowId; }); var adjustmentWays = Object.keys(adjustment.rate).map(function (dim) { return dim.indexOf('offline') === 0 ? 'offline' : 'online'; }).filter(function (way, index, list) { return list.indexOf(way) === index; }); adjustmentTargetWay = targetPolicyRow ? targetPolicyRow.way : adjustmentWays.length === 1 ? adjustmentWays[0] : null; adjustmentBoundStart = targetPolicyRow ? targetPolicyRow.start : baseStart; adjustmentBoundEnd = targetPolicyRow ? targetPolicyRow.end : baseEnd; drawer.querySelector('[data-drawer-title]').textContent = '编辑返点比例调整'; drawer.querySelector('[data-drawer-guide]').textContent = '正在编辑 ' + period(adjustment.start, adjustment.end) + ' 的' + (adjustmentTargetWay ? policyWayLabel(adjustmentTargetWay) : '') + '调整记录。可修正日期和比例；保存时仅基于该记录之前的政策重新识别各维度调整前比例，后续调整的历史对比基准不变。'; drawer.querySelector('[data-save-label]').textContent = '保存修改'; var startInput = drawer.querySelector('[data-adjustment-start]'); var endInput = drawer.querySelector('[data-adjustment-end]'); startInput.min = adjustmentBoundStart; startInput.max = adjustmentBoundEnd; endInput.min = adjustmentBoundStart; endInput.max = adjustmentBoundEnd; startInput.value = adjustment.start; endInput.value = adjustment.end; var collect = ''; var noncollect = ''; Object.keys(adjustment.rate).forEach(function (dim) { if (dim.indexOf('NonCollect') > -1) noncollect = adjustment.rate[dim]; else collect = adjustment.rate[dim]; }); drawer.querySelector('[data-adjustment-collect]').value = collect; drawer.querySelector('[data-adjustment-noncollect]').value = noncollect; drawer.querySelector('[data-adjustment-note]').value = adjustment.note || ''; drawer.querySelector('[data-validation]').textContent = ''; drawer.classList.add('qt-drawer--open'); drawer.setAttribute('aria-hidden', 'false'); }
+        function splitPolicyRowForAdjustment(targetPolicyRow, adjustment, rateValues) {
+          var targetPolicyRowIndex = policyListRows.findIndex(function (item) { return item.id === targetPolicyRow.id; });
+          if (targetPolicyRowIndex < 0) return;
+          var originalRates = Object.assign({}, targetPolicyRow.rates);
+          var policySegments = [];
+          if (targetPolicyRow.start < adjustment.start) {
+            policySegments.push(Object.assign({}, targetPolicyRow, { end:previousDate(adjustment.start), rates:Object.assign({}, originalRates) }));
+          }
+          var adjustedPolicyRow = Object.assign({}, targetPolicyRow, {
+            id:targetPolicyRow.start === adjustment.start ? targetPolicyRow.id : targetPolicyRow.id + '-' + adjustment.id,
+            start:adjustment.start,
+            end:adjustment.end,
+            rates:Object.assign({}, originalRates, rateValues)
+          });
+          policySegments.push(adjustedPolicyRow);
+          if (adjustment.end < targetPolicyRow.end) {
+            policySegments.push(Object.assign({}, targetPolicyRow, {
+              id:targetPolicyRow.id + '-after-' + adjustment.id,
+              start:nextDate(adjustment.end),
+              rates:Object.assign({}, originalRates)
+            }));
+          }
+          policyListRows.splice.apply(policyListRows, [targetPolicyRowIndex, 1].concat(policySegments));
+          adjustment.policyRowId = adjustedPolicyRow.id;
+        }
         function saveAdjustment() {
           var start = drawer.querySelector('[data-adjustment-start]').value;
           var end = drawer.querySelector('[data-adjustment-end]').value;
@@ -942,8 +997,17 @@
           }
           for (var dim2 in rateValues) { if (rateValues[dim2] === before[dim2]) { message.textContent = dimLabel(dim2) + ' 调整后返点与调整前适用返点相同，无需' + (editingId ? '保留本次修改。' : '新增调整。'); return; } }
           var adjustment = { id:editingId || 'adjustment-' + (adjustments.length + 1), policyRowId:adjustmentTargetRowId, adjustedAt:asValue(new Date()), start:start, end:end, before:before, rate:rateValues, note:drawer.querySelector('[data-adjustment-note]').value.trim(), type:targetPolicyRow ? '覆盖调整' : typeBase ? '临时调整' : '覆盖调整' };
-          if (targetPolicyRow) Object.keys(rateValues).forEach(function (dim) { targetPolicyRow.rates[dim] = rateValues[dim]; });
-          if (editingId) { var oldAdjustment = adjustments[currentAdjustmentIndex]; adjustment.adjustedAt = oldAdjustment.adjustedAt; adjustments[currentAdjustmentIndex] = adjustment; renderPolicy(); } else { adjustments.push(adjustment); renderPolicy(); }
+          if (editingId) {
+            var oldAdjustment = adjustments[currentAdjustmentIndex];
+            adjustment.adjustedAt = oldAdjustment.adjustedAt;
+            if (targetPolicyRow) Object.keys(rateValues).forEach(function (dim) { targetPolicyRow.rates[dim] = rateValues[dim]; });
+            adjustments[currentAdjustmentIndex] = adjustment;
+            renderPolicy();
+          } else {
+            if (targetPolicyRow) splitPolicyRowForAdjustment(targetPolicyRow, adjustment, rateValues);
+            adjustments.push(adjustment);
+            renderPolicy();
+          }
           closeDrawer();
         }
         policyFormModal.addEventListener('change', function (event) { var toggle = event.target.closest('[data-policy-card-toggle]'); if (!toggle) return; var way = toggle.getAttribute('data-policy-way'); if (toggle.checked) addPolicyCard(way); else resetPolicyCard(way); });
